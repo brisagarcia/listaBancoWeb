@@ -11,7 +11,7 @@ const BankList = () => {
       <h1 className={styles.title}>Lista de Bancos</h1>
 
       <div className={styles.banklistcontainer}>
-        {lstBancos.map((bank, index) => (
+        {lstBancos?.map((bank, index) => (
           <div key={index} className={styles.item}>
             <div>
               <label className={styles.bankname}>{bank.bankName}</label>
